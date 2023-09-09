@@ -1,0 +1,14 @@
+host = "localhost"
+port = 8080
+
+[s3]
+bucket = "test-20230909"
+region = "ap-northeast-1"
+
+[db]
+max_connections = 100
+min_connections = 3
+connection_timeout = 30
+acquire_timeout = 30
+logging = true
+log_level = "debug"

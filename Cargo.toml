@@ -1,0 +1,22 @@
+[package]
+name = "rust-ddd"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.3.1"
+async-trait = "0.1.73"
+aws-config = "0.56.1"
+aws-credential-types = { version = "0.56.1", features = ["hardcoded-credentials"] }
+aws-sdk-s3 = "0.30.0"
+aws-smithy-http = "0.56.1"
+config = { version = "0.13.3", features = ["toml"] }
+dotenv = "0.15.0"
+log = "0.4.20"
+pretty_env_logger = "0.5.0"
+sea-orm = { version = "0.12.2", features = ["sqlx-postgres", "runtime-tokio-native-tls", "mock", "macros", "with-chrono", "with-uuid"] }
+serde = { version = "1.0.188", features = ["derive"] }
+thiserror = "1.0.48"
+tokio = { version = "1.32.0", features = ["full"] }
